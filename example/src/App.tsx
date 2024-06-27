@@ -81,9 +81,14 @@ const Scene = () => {
 
   const csm = useCSM();
   useLayoutEffect(() => {
-    const material = voxels.current.getMaterial();
-    material.defines.USE_OUTPUT_NORMAL = 1;
-    return csm.setupMaterial(material);
+    const { opaque, transparent } = voxels.current.getMaterials();
+    opaque.defines.USE_OUTPUT_NORMAL = 1;
+    transparent.defines.USE_OUTPUT_NORMAL = 1;
+    const materialsCSM = [
+      csm.setupMaterial(opaque),
+      csm.setupMaterial(transparent),
+    ];
+    return () => materialsCSM.forEach((dispose) => dispose());
   }, []);
 
   const clock = useThree(({ clock }) => clock);

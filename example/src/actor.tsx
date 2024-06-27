@@ -110,7 +110,7 @@ export const Actor = memo(forwardRef<ActorApi, ActorProps>(({
         walking.current ? walking.current.path[walking.current.path.length - 1] : actor.current.position
       );
     }
-  }, [position]);
+  }, [position[0], position[1], position[2]]);
   return (
     <group ref={actor}>
       {children}

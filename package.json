@@ -1,7 +1,7 @@
 {
   "name": "r3f-voxels-pathfinder",
   "author": "Daniel Esteban Nombela",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -37,9 +37,9 @@
     "typescript": "^5.5.2"
   },
   "peerDependencies": {
-    "r3f-voxels": ">=0.0.3",
+    "r3f-voxels": ">=0.1",
     "react": ">=18.0",
-    "suspend-react": ">=0.1.3",
+    "suspend-react": ">=0.1",
     "three": ">=0.165"
   }
 }

@@ -8,17 +8,14 @@ importers:
 
   .:
     dependencies:
-      '@babel/runtime':
-        specifier: ^7.24.7
-        version: 7.24.7
       r3f-voxels:
-        specifier: '>=0.0.3'
-        version: 0.0.3(@react-three/fiber@8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.165.0))(react@18.3.1)(three@0.165.0)
+        specifier: '>=0.1'
+        version: 0.1.0(@react-three/fiber@8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.165.0))(react@18.3.1)(three@0.165.0)
       react:
         specifier: '>=18.0'
         version: 18.3.1
       suspend-react:
-        specifier: '>=0.1.3'
+        specifier: '>=0.1'
         version: 0.1.3(react@18.3.1)
       three:
         specifier: '>=0.165'
@@ -1434,8 +1431,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  r3f-voxels@0.0.3:
-    resolution: {integrity: sha512-ApTA4b7qMOUnGguQEm9wzWjB7M3QUTvlFohmzlmtJli9o7nTZFlKnGWfbfZu0LVlBPVvC9p5xyJdAjXsgkkkAg==}
+  r3f-voxels@0.1.0:
+    resolution: {integrity: sha512-FHm8ieDee8iQX/x6t8VBnLVpjvypJSShiNCfytNJw0dtJ1F0RdOFBC1X0D3gPQpVzwgz11WwLPVP0VQR7Ic23w==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
       react: '>=18.0'
@@ -3156,7 +3153,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  r3f-voxels@0.0.3(@react-three/fiber@8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.165.0))(react@18.3.1)(three@0.165.0):
+  r3f-voxels@0.1.0(@react-three/fiber@8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.165.0))(react@18.3.1)(three@0.165.0):
     dependencies:
       '@babel/runtime': 7.24.7
       '@react-three/fiber': 8.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.165.0)
