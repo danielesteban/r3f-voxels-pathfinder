@@ -40,7 +40,7 @@ static void PathNodeNeighbors(ASNeighborList neighbors, void* pathNode, void* co
 static float PathNodeHeuristic(void* fromNode, void* toNode, void* context) {
   Voxel* from = (Voxel*) fromNode;
   Voxel* to = (Voxel*) toNode;
-  return abs(from->x - to->x) + abs(from->y - to->y) * 0.25 + abs(from->z - to->z);
+  return abs(from->x - to->x) + abs(from->y - to->y) + abs(from->z - to->z);
 }
 
 static int EarlyExit(size_t visitedCount, void* visitingNode, void* goalNode, void* context) {
